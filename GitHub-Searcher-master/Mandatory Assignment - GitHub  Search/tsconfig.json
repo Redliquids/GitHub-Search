@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "outFile": "./MyScripts/main.js",
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "files": [
+    "./MyScripts/GitHubSearch.ts",
+    "./MyScripts/DisplayRepo.ts"
+  ]
+}

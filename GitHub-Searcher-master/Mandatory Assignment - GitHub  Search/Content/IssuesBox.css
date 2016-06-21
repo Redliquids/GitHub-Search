@@ -1,0 +1,40 @@
+﻿#OpenIssues {
+    padding-bottom: 20px;
+    min-width: 210px;
+    margin-left: 20px; 
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.IssuesBox {
+    float: left;
+    min-width: 200px;
+    max-width: 250px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    margin: 10px 1px 0 0;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+    box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+}
+
+.IssuesBox:hover{
+    background-color: lightblue;
+}
+
+.IssuesBox a{
+    text-decoration: none;
+}
+
+
+.IssuesBox img
+{
+    max-width:25px;
+    float:left;
+
+}
+
+.IssuesBox > div {
+    float: left;
+    padding: 5px;
+}

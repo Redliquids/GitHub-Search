@@ -1,0 +1,34 @@
+﻿/* This is the css for contributor boxes ONLY */
+
+.Contributors {
+    float: left;
+    min-width: 200px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    margin: 10px 1px 0 0;
+    -webkit-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+    -moz-box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+    box-shadow: 10px 10px 5px -8px rgba(143,143,143,1);
+    margin-left: 20px; 
+}
+
+.Contributors:hover{
+    background-color: lightblue;
+}
+
+.Contributors a{
+    text-decoration: none;
+}
+
+
+.Contributors img
+{
+    max-width:25px;
+    float:left;
+
+}
+
+.Contributors > div {
+    float: left;
+    padding: 5px;
+}

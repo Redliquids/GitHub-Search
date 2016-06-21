@@ -1,0 +1,23 @@
+﻿body {
+}
+
+/*#title {
+    width: 400px;
+}*/
+
+#Information {
+    width: 200px;
+    margin-left: 20px;
+    float: left;
+}
+/*This is the div that Contributors go in to*/
+.ContributorsBox {
+    width: 210px;
+    float: left;
+    margin-left: 20px;
+}
+/*This is the div that issues go in to*/
+.OpenIssuesClass {
+    width: 200px;
+    float: left;
+}

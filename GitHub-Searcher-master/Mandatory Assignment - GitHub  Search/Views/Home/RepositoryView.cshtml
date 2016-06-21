@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "RepositoryView";
+}
+
+<script src="~/MyScripts/main.js"></script>
+<link href="~/Content/RepoBox.css" rel="stylesheet" />
+<link href="~/Content/RepositoryView.css" rel="stylesheet" />
+<link href="~/Content/IssuesBox.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        GetRepoData();
+    });
+</script>
+@*<h2 id="title">Repository Name</h2>*@
+
+<div id="Information">
+    <h3>Information</h3>
+</div>
+
+<div id="Contributors" class="ContributorsBox">
+    <h3>Contributors</h3>
+</div>
+
+<div id="OpenIssues" class="OpenIssuesClass">
+    <h3>Open Issues</h3>
+</div>
