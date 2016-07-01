@@ -6,13 +6,30 @@ namespace GitSearch {
     export class GitHubSearch {
 
 
+        //this should be called everytime  user enters a char in the searchbar
+        static SearchOnType() {
+            var TextToSearch = $("#SearchTxt").text;
+
+            if (TextToSearch.length > 3) {
+                //wait 1 second then search for "TextToSearch.val"
+                setTimeout(1500);
+                if (TextToSearch.length != 3) {
+                    GitHubSearch.SearchOnType();
+                }
+                else {
+                    //do the actuall search, give dropdown?
+                }
+
+            }
+
+        }
+
         static Init(){
             var search = document.getElementById("SearchTxt");
             search.addEventListener("keydown", function (e) {
                 //console.log(e.keyCode);
                 if (e.keyCode === 13) {
                     GitSearch.GitHubSearch.Search();
-
                 }
             });
 

@@ -9,6 +9,10 @@ function GetRepoData() {
     var parameters = location.search.substring(1).split("&");
     var url = parameters[0];
 
+    $("#hider").hover(
+        $('#Information').hide
+    );
+
     $.getJSON(url, function (data) {
         // Example of what i get https://api.github.com/repos/Redliquids/Assignment-7-Hide-Text
 
@@ -81,6 +85,19 @@ function GetRepoData() {
                 //htmlContributors += user;
                 htmlContributors += "   </div>";
                 htmlContributors += "</div>";
+
+                // Code for onHover information starts here.
+                var ContributorsRepoCount = Informaion.url.public_repos;
+                var ContributorsLocation = Informaion.url.location;
+                var ContributorsMail = Informaion.url.email;
+
+                console.log("Contributor has: " + ContributorsRepoCount + " Repos.");
+
+                // This should be displayed when hovering over contributor.
+                var htmlContributorsInfo = "";
+                htmlContributorsInfo += "<div>";
+                htmlContributorsInfo += "<p>Has " + ContributorsRepoCount + " Repos</p>";
+                htmlContributorsInfo += "</div>";
 
                 Contributors.append(htmlContributors);
             });

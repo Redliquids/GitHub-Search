@@ -4,6 +4,19 @@ var GitSearch;
     var GitHubSearch = (function () {
         function GitHubSearch() {
         }
+        //this should be called everytime  user enters a char in the searchbar
+        GitHubSearch.SearchOnType = function () {
+            var TextToSearch = $("#SearchTxt").text;
+            if (TextToSearch.length > 3) {
+                //wait 1 second then search for "TextToSearch.val"
+                setTimeout(1500);
+                if (TextToSearch.length != 3) {
+                    GitHubSearch.SearchOnType();
+                }
+                else {
+                }
+            }
+        };
         GitHubSearch.Init = function () {
             var search = document.getElementById("SearchTxt");
             search.addEventListener("keydown", function (e) {
@@ -74,6 +87,7 @@ var GitSearch;
 function GetRepoData() {
     var parameters = location.search.substring(1).split("&");
     var url = parameters[0];
+    $("#hider").hover($('#Information').hide);
     $.getJSON(url, function (data) {
         // Example of what i get https://api.github.com/repos/Redliquids/Assignment-7-Hide-Text
         var returned = data;
@@ -137,6 +151,16 @@ function GetRepoData() {
                 //htmlContributors += user;
                 htmlContributors += "   </div>";
                 htmlContributors += "</div>";
+                // Code for onHover information starts here.
+                var ContributorsRepoCount = Informaion.url.public_repos;
+                var ContributorsLocation = Informaion.url.location;
+                var ContributorsMail = Informaion.url.email;
+                console.log("Contributor has: " + ContributorsRepoCount + " Repos.");
+                // This should be displayed when hovering over contributor.
+                var htmlContributorsInfo = "";
+                htmlContributorsInfo += "<div>";
+                htmlContributorsInfo += "<p>Has " + ContributorsRepoCount + " Repos</p>";
+                htmlContributorsInfo += "</div>";
                 Contributors.append(htmlContributors);
             });
         });
