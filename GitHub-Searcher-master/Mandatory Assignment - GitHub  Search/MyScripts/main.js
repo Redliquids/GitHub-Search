@@ -151,17 +151,19 @@ function GetRepoData() {
                 //htmlContributors += user;
                 htmlContributors += "   </div>";
                 htmlContributors += "</div>";
+                Contributors.append(htmlContributors);
                 // Code for onHover information starts here.
                 var ContributorsRepoCount = Informaion.url.public_repos;
                 var ContributorsLocation = Informaion.url.location;
                 var ContributorsMail = Informaion.url.email;
                 console.log("Contributor has: " + ContributorsRepoCount + " Repos.");
                 // This should be displayed when hovering over contributor.
-                var htmlContributorsInfo = "";
+                var htmlContributorsInfo = ""; // not the same as just " htmlContributors "
                 htmlContributorsInfo += "<div>";
                 htmlContributorsInfo += "<p>Has " + ContributorsRepoCount + " Repos</p>";
                 htmlContributorsInfo += "</div>";
-                Contributors.append(htmlContributors);
+                // im gonna need to append this code to the htmlContributors and hide it,
+                // then only display it .onHover.
             });
         });
         // Inside first $.getJSON
