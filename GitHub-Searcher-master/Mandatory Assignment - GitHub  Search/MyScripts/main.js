@@ -4,7 +4,8 @@ var GitSearch;
     var GitHubSearch = (function () {
         function GitHubSearch() {
         }
-        //this should be called everytime  user enters a char in the searchbar
+        // Unfinished Function that will search everytime a user enters a char in the searchbar
+        // I avoided this to not reach the maximum request count on the github API
         GitHubSearch.SearchOnType = function () {
             var TextToSearch = $("#SearchTxt").text;
             if (TextToSearch.length > 3) {
@@ -20,41 +21,34 @@ var GitSearch;
         GitHubSearch.Init = function () {
             var search = document.getElementById("SearchTxt");
             search.addEventListener("keydown", function (e) {
-                //console.log(e.keyCode);
                 if (e.keyCode === 13) {
                     GitSearch.GitHubSearch.Search();
                 }
             });
-            var button = $("#SearchButton"); // actually useless.
-            button.click(GitHubSearch.Search); // Couldn't get this to work...
         };
         GitHubSearch.clearSearch = function () {
             var container = $("Result");
             document.getElementById("Result").innerHTML = "";
-            //container.empty(); jQuery failed me D:
         };
         GitHubSearch.Search = function () {
             GitHubSearch.clearSearch();
             var input = $("#SearchTxt").val();
-            //console.log(input);
             var url = "https://api.github.com/search/repositories?q=" + input;
             $.getJSON(url, function (data) {
                 var returned = data.items;
-                //console.log(returned);
                 $.each(returned, function (index, item) {
                     var ownerProfileUrl = item.owner.avatar_url; // maybe i shouldn't use picture to save bandwith.
                     var repoName = item.name;
                     var repoOwner = item.owner.login;
                     var repoForks = item.forks;
                     var repoWatchers = item.watchers;
-                    var repoUrl = item.html_url; // don't forget this
+                    var repoUrl = item.html_url;
                     var displayResults = $("#Result");
                     var html = "";
                     html += "<div class='RepoBox clearfix'>";
-                    var pressedRepo = item.url; // i need to send this to the other page
+                    var pressedRepo = item.url;
                     html += "<a href='http://localhost:2160/home/RepositoryView" + "?" + pressedRepo + "'</a>"; // trying to re-route you to the repo you clicked.
-                    // i can't beleive all i had to do was add "?" and the link...
-                    html += "<img src='" + ownerProfileUrl + "' />"; // maybe i shouldn't use picture to save bandwith.
+                    html += "<img src='" + ownerProfileUrl + "' />";
                     html += "<div>";
                     html += "   <div>";
                     html += "<strong>Repo: </strong>";
@@ -102,7 +96,6 @@ function GetRepoData() {
         //var title = document.getElementById("title");// Selector
         //title.innerHTML = RepoName;// Sets title
         var htmlInfo = "";
-        //htmlInfo += "<div class='Information clearfix'>";
         htmlInfo += "<div>";
         htmlInfo += "   <div>";
         htmlInfo += "<h3>";
@@ -135,7 +128,6 @@ function GetRepoData() {
         Information.html(htmlInfo);
         $.getJSON(RepoContributorsUrl, function (object) {
             var contributorsData = data;
-            //console.log("Array/List of Contributors: " + object); // Should log Every Contributor object
             $.each(object, function (index, Informaion) {
                 var user = Informaion.login;
                 var userPic = Informaion.avatar_url;
@@ -148,25 +140,23 @@ function GetRepoData() {
                 htmlContributors += "<div>";
                 htmlContributors += "   <div>";
                 htmlContributors += "<strong>" + user + "</strong>";
-                //htmlContributors += user;
                 htmlContributors += "   </div>";
                 htmlContributors += "</div>";
                 Contributors.append(htmlContributors);
-                // Code for onHover information starts here.
                 var ContributorsRepoCount = Informaion.url.public_repos;
                 var ContributorsLocation = Informaion.url.location;
                 var ContributorsMail = Informaion.url.email;
                 console.log("Contributor has: " + ContributorsRepoCount + " Repos.");
                 // This should be displayed when hovering over contributor.
+                // but is not yet implemented...
                 var htmlContributorsInfo = ""; // not the same as just " htmlContributors "
                 htmlContributorsInfo += "<div>";
                 htmlContributorsInfo += "<p>Has " + ContributorsRepoCount + " Repos</p>";
                 htmlContributorsInfo += "</div>";
                 // im gonna need to append this code to the htmlContributors and hide it,
-                // then only display it .onHover.
+                // then only display it .onHover 
             });
         });
-        // Inside first $.getJSON
         var RepoIssues = data.issues_url;
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         //// What we get: https://api.github.com/repos/Redliquids/Assignment-7-Hide-Text/issues{/number} ////

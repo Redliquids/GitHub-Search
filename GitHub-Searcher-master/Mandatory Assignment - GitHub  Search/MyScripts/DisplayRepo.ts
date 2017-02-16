@@ -31,7 +31,6 @@ function GetRepoData() {
         //title.innerHTML = RepoName;// Sets title
 
         var htmlInfo = "";
-        //htmlInfo += "<div class='Information clearfix'>";
         htmlInfo += "<div>";
         htmlInfo += "   <div>";
         htmlInfo += "<h3>";
@@ -66,7 +65,6 @@ function GetRepoData() {
 
         $.getJSON(RepoContributorsUrl, function (object) {
             var contributorsData = data;
-            //console.log("Array/List of Contributors: " + object); // Should log Every Contributor object
 
             $.each(object, function (index, Informaion) {
 
@@ -82,13 +80,11 @@ function GetRepoData() {
                 htmlContributors += "<div>";
                 htmlContributors += "   <div>";
                 htmlContributors += "<strong>" + user + "</strong>";
-                //htmlContributors += user;
                 htmlContributors += "   </div>";
                 htmlContributors += "</div>";
 
                 Contributors.append(htmlContributors);
 
-                // Code for onHover information starts here.
                 var ContributorsRepoCount = Informaion.url.public_repos;
                 var ContributorsLocation = Informaion.url.location;
                 var ContributorsMail = Informaion.url.email;
@@ -97,17 +93,17 @@ function GetRepoData() {
 
 
                 // This should be displayed when hovering over contributor.
+                // but is not yet implemented...
                 var htmlContributorsInfo = ""; // not the same as just " htmlContributors "
                 htmlContributorsInfo += "<div>";
                 htmlContributorsInfo += "<p>Has " + ContributorsRepoCount + " Repos</p>";
                 htmlContributorsInfo += "</div>";
 
                 // im gonna need to append this code to the htmlContributors and hide it,
-                // then only display it .onHover.
+                // then only display it .onHover 
 
             });
         });
-        // Inside first $.getJSON
 
         var RepoIssues = data.issues_url;
 

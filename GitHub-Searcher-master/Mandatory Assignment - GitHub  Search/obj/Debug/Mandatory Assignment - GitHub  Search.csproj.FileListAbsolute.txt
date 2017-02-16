@@ -361,3 +361,36 @@ C:\Users\Administratör\Documents\GitHub\School\GitHub-Search\GitHub-Searcher-ma
 C:\Users\Administratör\Documents\GitHub\School\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\obj\Debug\Mandatory Assignment - GitHub  Search.csprojResolveAssemblyReference.cache
 C:\Users\Administratör\Documents\GitHub\School\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\obj\Debug\Mandatory Assignment - GitHub  Search.dll
 C:\Users\Administratör\Documents\GitHub\School\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\obj\Debug\Mandatory Assignment - GitHub  Search.pdb
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\csc.exe
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\vbc.exe
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\Mandatory Assignment - GitHub  Search.dll.config
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\Mandatory Assignment - GitHub  Search.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\Mandatory Assignment - GitHub  Search.pdb
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Helpers.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Mvc.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Razor.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Webpages.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Razor.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Webpages.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Helpers.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\bin\System.Web.Mvc.xml
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\obj\Debug\Mandatory Assignment - GitHub  Search.csprojResolveAssemblyReference.cache
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\obj\Debug\Mandatory Assignment - GitHub  Search.dll
+C:\Users\Administratör\Documents\GitHub\GitHub-Search\GitHub-Searcher-master\Mandatory Assignment - GitHub  Search\obj\Debug\Mandatory Assignment - GitHub  Search.pdb
